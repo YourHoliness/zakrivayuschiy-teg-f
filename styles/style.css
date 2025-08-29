@@ -181,7 +181,7 @@
   border: 2px transparent solid;
   padding: 0;
   background-color: transparent;
-  transition: border-color 0.3 ease;
+  transition: border-color 0.3s ease;
   cursor: pointer;
   block-size: 38px;
 }
