@@ -15,15 +15,15 @@
   </head>
   <body class="page">
     <header class="header page__container-inline-size">
-      <h1 class="header__title">&lt;/HTML&gt;</h1>
-      <p class="header__description">закрывающий тег</p>
+      <span class="header__title">&lt;/HTML&gt;</span>
+      <h1 class="header__description">закрывающий тег</h1>
     </header>
     <main class="content page__container-inline-size">
       <ul class="content__cards-list">
         <li class="content__cards-list-item">
           <article class="card">
             <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
-            <figure class="card__image-wrapper">
+            <div class="card__image-wrapper">
               <img
                 loading="lazy"
                 src="./images/camper.png"
@@ -31,7 +31,7 @@
                 class="card__image filter-invert"
               />
               <span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
-            </figure>
+            </div>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__paragraph">
@@ -84,7 +84,7 @@
         <li class="content__cards-list-item">
           <article class="card">
             <h2 class="card__title">1 спринт: Я — чистый лист</h2>
-            <figure class="card__image-wrapper">
+            <div class="card__image-wrapper">
               <img
                 loading="lazy"
                 src="./images/camper.png"
@@ -92,7 +92,7 @@
                 class="card__image filter-night"
               />
               <span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
-            </figure>
+            </div>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__paragraph">
@@ -147,7 +147,7 @@
         <li class="content__cards-list-item">
           <article class="card">
             <h2 class="card__title">1 спринт: А если не получится?</h2>
-            <figure class="card__image-wrapper">
+            <div class="card__image-wrapper">
               <img
                 loading="lazy"
                 src="./images/camper.png"
@@ -155,7 +155,7 @@
                 class="card__image filter-neon"
               />
               <span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
-            </figure>
+            </div>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__paragraph">
@@ -208,7 +208,7 @@
         <li class="content__cards-list-item">
           <article class="card">
             <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
-            <figure class="card__image-wrapper">
+            <div class="card__image-wrapper">
               <img
                 loading="lazy"
                 src="./images/camper.png"
@@ -216,7 +216,7 @@
                 class="card__image filter-cyberpunk"
               />
               <span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
-            </figure>
+            </div>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__paragraph">
@@ -270,7 +270,7 @@
         <li class="content__cards-list-item">
           <article class="card">
             <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
-            <figure class="card__image-wrapper">
+            <div class="card__image-wrapper">
               <img
                 loading="lazy"
                 src="./images/camper.png"
@@ -278,7 +278,7 @@
                 class="card__image filter-morning"
               />
               <span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
-            </figure>
+            </div>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__paragraph">
@@ -333,7 +333,7 @@
         <li class="content__cards-list-item">
           <article class="card">
             <h2 class="card__title">3 спринт: Обходные стратегии</h2>
-            <figure class="card__image-wrapper">
+            <div class="card__image-wrapper">
               <img
                 loading="lazy"
                 src="./images/camper.png"
@@ -341,7 +341,7 @@
                 class="card__image filter-sunset"
               />
               <span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
-            </figure>
+            </div>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__paragraph">
@@ -394,7 +394,7 @@
         <li class="content__cards-list-item">
           <article class="card">
             <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
-            <figure class="card__image-wrapper">
+            <div class="card__image-wrapper">
               <img
                 loading="lazy"
                 src="./images/camper.png"
@@ -402,7 +402,7 @@
                 class="card__image filter-infrared"
               />
               <span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
-            </figure>
+            </div>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__paragraph">
@@ -456,7 +456,7 @@
         <li class="content__cards-list-item">
           <article class="card">
             <h2 class="card__title">«Сейчас я здесь»</h2>
-            <figure class="card__image-wrapper">
+            <div class="card__image-wrapper">
               <img
                 loading="lazy"
                 src="./images/camper.png"
@@ -464,7 +464,7 @@
                 class="card__image filter-contrast"
               />
               <span class="card__label" aria-hidden="true">&lt;/HTML&gt;</span>
-            </figure>
+            </div>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__paragraph">
@@ -540,9 +540,11 @@
           </div>
           <p class="dialog__content-text">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <button class="dialog__button button" type="submit" onclick="window['save-dialog'].close()">
-          <span class="button__text">ок</span>
-        </button>
+        <form method="dialog">
+          <button class="dialog__button button" type="submit">
+            <span class="button__text">ок</span>
+          </button>
+        </form>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
