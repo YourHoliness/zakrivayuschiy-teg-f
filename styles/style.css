@@ -25,7 +25,9 @@
 
 .header__title {
   margin-block-end: var(--header-title-margin-block);
+  vertical-align: bottom;
   font-size: var(--header-title-font-size);
+  line-height: 100%;
   text-transform: uppercase;
 }
 
