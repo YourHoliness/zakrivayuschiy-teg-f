@@ -223,7 +223,7 @@
   flex-direction: column;
   gap: 30px;
   border: 2px #000 solid;
-  padding: 30px;
+  padding: 30px 38px;
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
 }
 
@@ -249,10 +249,11 @@
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
+  letter-spacing: 0%;
 }
 
 .dialog__button {
-  padding: 12.5px;
+  padding: 9px;
   text-transform: uppercase;
   inline-size: 100%;
 }
@@ -365,5 +366,9 @@
   .button-save__content svg {
     inline-size: 21px;
     block-size: 21px;
+  }
+
+  .dialog__save {
+    padding: 30px;
   }
 }
